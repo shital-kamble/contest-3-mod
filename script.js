@@ -35,7 +35,7 @@ signupBtn.addEventListener("submit", (event) => {
     // Show success message and redirect to profile page
     
     setTimeout(() => {
-        window.location.href = "/profile/index.html";
+        window.location.href = "./profile/index.html";
     }, 1000); // redirect after 1 second
 });
 
@@ -52,8 +52,8 @@ const profile = document.getElementById('profile');
 profile.addEventListener('click', () => {
     const user = JSON.parse(localStorage.getItem('user')) || false;
     if(user) {
-        window.location.href = "/profile/index.html";
+        window.location.href = "./profile/index.html";
     } else {
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
     }
 });
